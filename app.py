@@ -35,13 +35,6 @@ def load_rag_chain():
     Student's Doubt: {question}
 
     Answer:"""
-
-    Context from NCERT Textbook:
-    {context}
-
-    Student's Doubt: {question}
-
-    Answer:"""
     prompt = ChatPromptTemplate.from_template(template)
     
     def format_docs(docs):
