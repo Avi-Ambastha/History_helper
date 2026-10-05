@@ -21,7 +21,7 @@ def load_rag_chain():
     retriever = vector_db.as_retriever(search_kwargs={"k": 3})
     
     os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"] 
-    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.3)
+    llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.3)
     
     template = """You are a helpful and friendly Class 10 History tutor for NCERT students.
     Use the following textbook excerpts to answer the student's doubt. 
